@@ -24,7 +24,6 @@ public class PatientDto {
                 .name(this.name)
                 .birthdate(this.birthdate)
                 .phone(this.phone)
-                .address(this.address)
-                .createdat(this.createdat).build();
+                .address(this.address).build();
     }
 }

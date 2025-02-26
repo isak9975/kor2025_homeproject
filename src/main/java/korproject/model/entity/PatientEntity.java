@@ -3,10 +3,10 @@ package korproject.model.entity;
 import jakarta.persistence.*;
 import lombok.*;
 
-@Setter@Getter@Builder
+@Setter@Getter @Builder
 @AllArgsConstructor@NoArgsConstructor
 @Entity(name = "patient")
-public class PatientEntity extends BaseTime{
+public class PatientEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int patientid;
@@ -23,6 +23,4 @@ public class PatientEntity extends BaseTime{
     @Column(columnDefinition = "varchar(100)",nullable = false)
     private String address;
 
-    @Column()
-    private String createdat;
 }
